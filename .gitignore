@@ -1508,3 +1508,4 @@ backend/node_modules/mongoose/types/utility.d.ts
 backend/node_modules/mongoose/types/validation.d.ts
 backend/node_modules/mongoose/types/virtuals.d.ts
 frontend/soulfull-app/node_modules/*
+backend/node_modules/mongoose/node_modules/@types/whatwg-url/dist/URL-impl.d.ts
