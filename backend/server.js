@@ -1,15 +1,18 @@
+// server.js
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Connect to MongoDB
-mongoose.connect('mongodb://localhost/myapp', {
+const mongoURI = 'mongodb+srv://root:Sirisha@@cluster0.pnhu24p.mongodb.net/?retryWrites=true&w=majority'; // Replace this with your connection string
+
+mongoose.connect(mongoURI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
 
-// Define routes
+
+app.use(express.json());
 app.use('/api/users', require('./routes/users'));
 
 app.listen(PORT, () => {
