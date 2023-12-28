@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-const mongoURI = 'mongodb+srv://root:Sirisha@@cluster0.pnhu24p.mongodb.net/?retryWrites=true&w=majority'; // Replace this with your connection string
+const mongoURI = 'mongodb+srv://root:qwerty1234@cluster0.pnhu24p.mongodb.net/dumpdb'; // Replace this with your connection string
 
 mongoose.connect(mongoURI, {
   useNewUrlParser: true,
