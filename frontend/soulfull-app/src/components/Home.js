@@ -28,7 +28,7 @@ const YogaHome = () => {
   };
 
   const yogaPoses = [
-    { name: 'Downward-Facing Dog', image: 'https://via.placeholder.com/300' },
+    { name: 'Downward-Facing Dog', image: 'F:/projects/Soulfull-Stretch/frontend/soulfull-app/src/assets/images/downward-facingdog.webp'},
     { name: 'Warrior II', image: 'https://via.placeholder.com/300' },
     { name: 'Tree Pose', image: 'https://via.placeholder.com/300' },
     { name: 'Child\'s Pose', image: 'https://via.placeholder.com/300' },
@@ -43,22 +43,22 @@ const YogaHome = () => {
     // Add more yoga poses here
   ];
 
-  const benefitsOfYoga = [
-    'Improves flexibility and balance',
-    'Reduces stress and promotes relaxation',
-    'Increases strength and stamina',
-    'Enhances mental clarity and focus',
-    'Boosts immune system functionality',
-    'Improves posture and spinal health',
-    'Helps in better sleep quality',
-    'Aids in weight loss and metabolism',
-    'Promotes inner peace and tranquility',
-    'Supports overall well-being',
-    'Balances emotions and reduces anxiety',
-    'Enhances mindfulness and self-awareness',
-    'Encourages a healthier lifestyle',
-    // Add more benefits here
-  ];
+  // const benefitsOfYoga = [
+  //   'Improves flexibility and balance',
+  //   'Reduces stress and promotes relaxation',
+  //   'Increases strength and stamina',
+  //   'Enhances mental clarity and focus',
+  //   'Boosts immune system functionality',
+  //   'Improves posture and spinal health',
+  //   'Helps in better sleep quality',
+  //   'Aids in weight loss and metabolism',
+  //   'Promotes inner peace and tranquility',
+  //   'Supports overall well-being',
+  //   'Balances emotions and reduces anxiety',
+  //   'Enhances mindfulness and self-awareness',
+  //   'Encourages a healthier lifestyle',
+  //   // Add more benefits here
+  // ];
 
   const handleHover = (event) => {
     event.target.style.backgroundColor = '#005050';
@@ -90,18 +90,12 @@ const YogaHome = () => {
         </button>
       </div>
       <div style={{ textAlign: 'center' }}>
-        <h1 style={{ color: '#008080', paddingTop: '40px' }}>Welcome to the Yoga Home Page</h1>
+        <h1 style={{ color: '#008080', paddingTop: '40px' }}>PranaSculpt: Aligning Health with Yoga</h1>
+
         <p style={{ fontSize: '18px', lineHeight: '1.6', color: '#333', paddingTop: '20px' }}>
           Embrace the serenity of yoga, where mind, body, and soul unite in harmony. Find your inner peace and balance through the practice of ancient wisdom.
         </p>
-        <h2 style={{ color: '#008080', marginTop: '30px' }}>Benefits of Yoga:</h2>
-        <ul style={{ textAlign: 'left', maxWidth: '600px', margin: 'auto', paddingTop: '20px' }}>
-          {benefitsOfYoga.map((benefit, index) => (
-            <li key={index} style={{ fontSize: '16px', marginBottom: '10px' }}>
-              {benefit}
-            </li>
-          ))}
-        </ul>
+    
         <h2 style={{ color: '#008080', marginTop: '30px' }}>Yoga Poses</h2>
         <div style={{ overflowX: 'auto', whiteSpace: 'nowrap', margin: '20px 0', paddingBottom: '40px', display: 'flex' }}>
           {yogaPoses.map((pose, index) => (

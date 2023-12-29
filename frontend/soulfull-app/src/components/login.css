@@ -1,0 +1,41 @@
+/* login.css */
+
+/* Updated styles for the login container */
+.login-container {
+  max-width: 400px;
+  margin: 50px auto; /* Center the form vertically and horizontally */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.login-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000; /* Black color for the heading */
+  font-size: 24px; /* Adjust font size */
+  font-weight: bold; /* Make the text bold */
+}
+
+.login-form input {
+  width: calc(100% - 20px); /* Adjust input width */
+  margin: 5px 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #000; /* Black border */
+  font-size: 16px;
+  color: #000; /* Black color for text */
+}
+
+.login-form button {
+  width: calc(100% - 20px); /* Adjust button width */
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff; /* Blue background */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}

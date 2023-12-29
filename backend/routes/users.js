@@ -5,7 +5,7 @@ const User = require('../models/User');
 
 router.post('/signup', async (req, res) => {
   try {
-    const { username, email, password } = req.body;
+    const { username, email, password ,confirm } = req.body;
     
     // Check if the user already exists
     const existingUser = await User.findOne({ email });
