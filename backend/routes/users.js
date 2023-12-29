@@ -26,6 +26,24 @@ router.post('/signup', async (req, res) => {
 
 router.post('/login', async (req, res) => {
   // Implement user login logic here
+  try {
+    const { email, password } = req.body;
+    
+    // Check if the user exists
+    const user = await User.findOne({ email });
+    if (!user) {
+      return res.status(400).json({ message: 'Invalid credentials' });
+    }
+
+    // Validate password
+    if (password !== user.password) {
+      return res.status(400).json({ message: 'Invalid credentials' });
+    }
+
+    res.status(200).json({ message: 'Login successful' });
+  } catch (error) {
+    res.status(500).json({ message: 'Error logging in', error: error.message });
+  }
 });
 
 module.exports = router;
