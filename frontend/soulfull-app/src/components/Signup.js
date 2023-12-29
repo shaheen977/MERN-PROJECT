@@ -17,7 +17,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('/api/users/signup', formData);
+      await axios.post('http://localhost:5000/api/users/signup', formData);
       // Redirect to login page or show a success message
     } catch (error) {
       // Handle error: display error message or redirect to an error page
