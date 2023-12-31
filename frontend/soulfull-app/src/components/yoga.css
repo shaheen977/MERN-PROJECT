@@ -1,0 +1,37 @@
+/* yoga.css */
+
+.yoga-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .dropdown-container {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  select {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .yoga-information {
+    margin-top: 20px;
+  }
+  
+  .yoga-information h2 {
+    color: #008080;
+  }
+  
+  .yoga-image {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  

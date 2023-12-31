@@ -19,7 +19,7 @@
 }
 
 .login-form input {
-  width: calc(100% - 20px); /* Adjust input width */
+  width: calc(100% - 45px); /* Adjust input width */
   margin: 5px 10px;
   padding: 10px;
   border-radius: 5px;
@@ -38,4 +38,40 @@
   color: white;
   font-size: 16px;
   cursor: pointer;
+}
+
+.login-form p {
+  color: red; /* Color for error messages */
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.login-form p a {
+  color: #007bff; /* Blue color for the sign-up link */
+  text-decoration: none;
+}
+
+.login-form p a:hover {
+  text-decoration: underline; /* Underline effect on hover */
+}
+
+.login-form .error-message,
+.login-form .signup-link {
+  text-align: center; /* Center-align the content */
+  margin-top: 10px; /* Provide some space from the form elements */
+}
+
+.login-form .error-message {
+  color: red; /* Color for error messages */
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.login-form .signup-link a {
+  color: #007bff; /* Blue color for the sign-up link */
+  text-decoration: none;
+}
+
+.login-form .signup-link a:hover {
+  text-decoration: underline; /* Underline effect on hover */
 }
