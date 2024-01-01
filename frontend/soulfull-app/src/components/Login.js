@@ -1,11 +1,10 @@
+// Login.js
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom'; 
 import './login.css';
 
-// ... (Previous code remains unchanged)
-
-const Login = () => {
+const Login = ({ onLogin }) => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: '',
@@ -29,8 +28,9 @@ const Login = () => {
     try {
       const response = await axios.post('http://localhost:5000/api/users/login', formData);
       if (response.status >= 200 && response.status < 300) {
-        // Successful login, redirect to Dashboard or any desired component
-        navigate('/yoga');
+        // Successful login
+        onLogin(); // Update parent component about successful login
+        navigate('/yoga'); // Redirect to the desired component
       }
     } catch (error) {
       if (error.response && error.response.status === 401) {
