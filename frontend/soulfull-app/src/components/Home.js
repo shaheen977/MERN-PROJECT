@@ -14,18 +14,18 @@ const YogaHome = () => {
   };
 
   const yogaPoses = [
-    { name: 'Downward-Facing Dog', image: 'F:/projects/Soulfull-Stretch/frontend/soulfull-app/src/assets/images/downward-facingdog.webp'},
-    { name: 'Warrior II', image: 'https://via.placeholder.com/300' },
-    { name: 'Tree Pose', image: 'https://via.placeholder.com/300' },
-    { name: 'Child\'s Pose', image: 'https://via.placeholder.com/300' },
-    { name: 'Cobra Pose', image: 'https://via.placeholder.com/300' },
-    { name: 'Triangle Pose', image: 'https://via.placeholder.com/300' },
-    { name: 'Bridge Pose', image: 'https://via.placeholder.com/300' },
-    { name: 'Seated Forward Bend', image: 'https://via.placeholder.com/300' },
-    { name: 'Plank Pose', image: 'https://via.placeholder.com/300' },
-    { name: 'Fish Pose', image: 'https://via.placeholder.com/300' },
-    { name: 'Camel Pose', image: 'https://via.placeholder.com/300' },
-    { name: 'Corpse Pose', image: 'https://via.placeholder.com/300' },
+    { name: 'Downward-Facing Dog', image: '/downward-facing-dog.jpg' },
+    { name: 'Warrior II', image: '/warrier.jpg' },
+    { name: 'Tree Pose', image: '/tree-pose.jpg' },
+    { name: 'Child\'s Pose', image: '/childs-pose.jpg' },
+    { name: 'Cobra Pose', image: '/cobra-pose.jpg' }, // Adjusted path assuming it's in the "public" folder
+    { name: 'Triangle Pose', image: '/triangle-pose.jpg' },
+    { name: 'Bridge Pose', image: 'bridge-pose.jpeg' },
+    { name: 'Seated Forward Bend', image: 'seated-forward-bend.jpg' },
+    { name: 'Plank Pose', image: '/plank-pose.jpeg' },
+    { name: 'Fish Pose', image: '/fish-pose.jpg' },
+    { name: 'Camel Pose', image: 'camel-pose.jpeg' },
+    { name: 'Corpse Pose', image: 'corpose-pose.jpeg' },
     // Add more yoga poses here
   ];
 
@@ -70,7 +70,8 @@ const YogaHome = () => {
               <img
                 src={pose.image}
                 alt={pose.name}
-                className="pose-image"
+                className="pose-image" // Add a class for styling
+                style={{ width: '300px', height: '300px' }} // Set fixed width and height
               />
               <p className="pose-name">{pose.name}</p>
             </div>

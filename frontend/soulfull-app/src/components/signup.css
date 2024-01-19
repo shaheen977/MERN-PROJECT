@@ -6,14 +6,16 @@
   margin: 50px auto; /* Center the form vertically and horizontally */
   padding: 20px;
   border-radius: 10px;
-  background-color: #f0f0f0;
+  background-image: url('../../public/signupbg.jpg'); /* Add the path to your yoga-related background image */
+  background-size: cover;
+  background-position: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
 .signup-container h1 {
   text-align: center;
   margin-bottom: 20px;
-  color: #333; /* Adjust text color */
+  color: #fff; /* Adjust text color to be visible on the background */
 }
 
 .signup-form input {
@@ -31,7 +33,7 @@
   padding: 10px;
   border-radius: 5px;
   border: none;
-  background-color: #007bff;
+  background-color: #d83058;
   color: white;
   font-size: 16px;
   cursor: pointer;
@@ -46,4 +48,14 @@
   font-size: 14px;
   margin-bottom: 10px;
   text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('../../public/signupbodybg.jpg'); /* Adjust the path to your background image */
+  background-size: cover;
+  background-position: center;
+  font-family: 'Arial', sans-serif; /* Adjust the font family as needed */
+  color: #333; /* Set default text color */
 }

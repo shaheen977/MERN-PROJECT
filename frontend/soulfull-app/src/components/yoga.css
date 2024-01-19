@@ -34,4 +34,46 @@
     border-radius: 10px;
     margin-bottom: 10px;
   }
-  
+
+  /* yoga.css */
+
+.yoga-container {
+  text-align: center;
+  padding: 20px;
+  background-image: url('../../public/bg.jpg'); /* Adjust the path based on your project structure */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Text color */
+}
+
+/* Add any additional styling as needed */
+.dropdown-container {
+  margin-bottom: 20px;
+}
+
+.yoga-information {
+  max-width: 600px;
+  padding: 20px;
+  background-color: rgba(94, 168, 136, 0.8); /* Update the background color for the information section */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.yoga-information h2 {
+  color: #110080; /* Color for h2 element within yoga-information */
+}
+
+.yoga-image {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: #333; /* Update the background color for the image */
+}
+
