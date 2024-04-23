@@ -22,7 +22,7 @@ const Signup = () => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
 
-    // Clear specific error when user starts typing in a field
+    // Clear specific error when the user starts typing in a field
     setFormErrors({ ...formErrors, [name]: '' });
   };
 
@@ -71,6 +71,11 @@ const Signup = () => {
     }
   };
 
+  const handleLoginClick = () => {
+    // Redirect to the login page when the "Already have an account? Login" link is clicked
+    navigate('/login');
+  };
+
   return (
     <div className="signup-container">
       <h1>Signup</h1>
@@ -89,6 +94,11 @@ const Signup = () => {
         />
         {formErrors.signup && <p className="error-message">{formErrors.signup}</p>}
         <button type="submit">Sign Up</button>
+
+        {/* Add the "Already have an account? Login" feature below the signup button */}
+        <p className="login-link">
+          Already have an account? <button type="button" onClick={handleLoginClick}>Login</button>
+        </p>
       </form>
     </div>
   );

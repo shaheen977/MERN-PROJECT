@@ -26,7 +26,9 @@ const Yoga = () => {
             pose: "Child's Pose",
             benefits: 'Calms the mind, relieves stress and fatigue.',
             howToDo: 'Kneel on the floor and sit back on your heels. Lower your forehead to the ground...',
-            image: 'childs-pose-balasana.jpg',
+            image: 'child-pose-balasana.jpg',
+            FoodToAvoid : "1. Processed Foods  2. Caffeine  3. Sugar  4. Alcohol  5. Highly Spiced or Fried Foods.",
+            FoodToFollow : "1. Complex Carbohydrates 2. Fruits and Vegetables 3. Dark chocolate 4. Magnesium-Rich Foods 5. Probiotic-Rich Foods"
           });
           
                     
@@ -36,7 +38,9 @@ const Yoga = () => {
           pose: 'Cat-Cow Pose',
           benefits: 'Improves spine flexibility, alleviates back pain.',
           howToDo: 'Get on your hands and knees. Inhale, arch your back and lift your head and tailbone...',
-          image: 'https://via.placeholder.com/300',
+          image: 'cat-cow-pose.jpg',
+          FoodToAvoid : '1. Reduce Inflammatory Foods 2. Limit Highly Processed Foods 3. Maintain a Healthy Weight 4. Limit Salt Intake',
+          FoodToFollow : '1. Fatty Fish 2. Leafy Greens 3. Broccoli 4. Nuts and Seeds 5. Water'
         });
         break;
       case 'Anxiety':
@@ -44,7 +48,10 @@ const Yoga = () => {
           pose: 'Corpse Pose',
           benefits: 'Relaxes the body and mind, reduces anxiety.',
           howToDo: 'Lie on your back, close your eyes, and relax your entire body...',
-          image: 'https://via.placeholder.com/300',
+          image: 'corpose-pose.jpeg',
+          FoodToAvoid : '1. Limit sugar and Proccessed foods 2. Protein rich foods 3. Magnesium rich foods 4. Herbal Teas',
+          FoodToFollow : '1. Dark chocolate 2. Fatty Fish 3. Whole grains 4. Avocado 5. Oats.'
+
         });
         break;
       case 'Insomnia':
@@ -52,7 +59,9 @@ const Yoga = () => {
           pose: 'Legs-Up-The-Wall Pose',
           benefits: 'Promotes relaxation, aids in better sleep.',
           howToDo: 'Sit close to the wall, then lie on your back and extend your legs up the wall...',
-          image: 'https://via.placeholder.com/300',
+          image: 'Legs-up-the-wall.jpg',
+          FoodToAvoid : '1. Caffeine 2. Heavy and spicy meals 3. Nicotine 4. Alcohol 5. High sugar foods',
+          FoodToFollow : '1. Vitamin B6-Rich Foods 2. Calcium-Rich Foods 3. Fruits with Natural Sugars 4. Whole Grains'
         });
         break;
       case 'Digestive Problems':
@@ -60,7 +69,9 @@ const Yoga = () => {
           pose: 'Seated Forward Bend',
           benefits: 'Stimulates digestion, relieves bloating and discomfort.',
           howToDo: 'Sit on the floor with legs extended, bend forward from the hips, reaching for your feet...',
-          image: 'https://via.placeholder.com/300',
+          image: 'seated-forward-bend.jpg',
+          FoodToAvoid: '1. Gas-Producing Vegetables 2. Alcohol 3. Caffeine 4. High-Fiber Foods (in Excess)',
+          FoodToFollow: '1. Fiber-Rich Foods 2. 2. Probiotic-Rich Foods 3. Papaya 4. Whole Grains 5. Hydrating Foods.'
         });
         break;
       default:
@@ -89,6 +100,8 @@ const Yoga = () => {
             <img src={yogaInformation.image} alt={yogaInformation.pose} className="yoga-image" />
             <p><strong>Benefits:</strong> {yogaInformation.benefits}</p>
             <p><strong>How to do:</strong> {yogaInformation.howToDo}</p>
+            <p><strong>Food To avoid:</strong>{yogaInformation.FoodToAvoid}</p>
+            <p><strong> Food to be follow:</strong>{yogaInformation.FoodToFollow}</p>
             {/* Add more yoga information here */}
           </>
         )}
